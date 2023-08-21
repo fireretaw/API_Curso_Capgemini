@@ -1,7 +1,7 @@
 <?php
 
     //Variáveis de acesso
-    $url = "localhost"
+    $url = "localhost";
     $usuario = "root";
     $senha = "";
     $base = "api";

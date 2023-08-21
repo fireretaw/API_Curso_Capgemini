@@ -1,7 +1,7 @@
 <?php
 
     //Incluir a conexão
-    include("conexao.php")
+    include("conexao.php");
 
 
     //Sql
@@ -27,6 +27,4 @@
 
     //JSON
     json_encode(['dados'=>$cursos]);
-
-    var_dump($cursos);
 ?>
