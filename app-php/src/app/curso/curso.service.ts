@@ -21,7 +21,7 @@ export class CursoService {
   //Obter todos os cursos
   obterCursos(): Observable<Curso[]>{
     return this.http.get(this.url+"listar").pipe(
-      map((res) => {
+      map((res : any) => {
         this.vetor = res['cursos'];
         return this.vetor;
       })
