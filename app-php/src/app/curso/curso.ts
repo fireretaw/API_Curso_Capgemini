@@ -1,7 +1,7 @@
 export class Curso{
 
-    nomeCurso!:string;
-    valorCurso!:number;
+    nomeCurso:string = "";
+    valorCurso:number = 0;
     idCurso?:number;
 
 }

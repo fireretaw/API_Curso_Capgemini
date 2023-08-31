@@ -25,6 +25,8 @@
         $indice++;
     }
 
+    
+
     //JSON
     json_encode(['dados'=>$cursos]);
 ?>

@@ -13,18 +13,20 @@ export class CursoService {
   url = "http://localhost/api/php/";
 
   //Vetor
-  vetor!:Curso[];
+  vetor:Curso[] = [];
 
   //Construtor
   constructor(private http: HttpClient) { }
 
   //Obter todos os cursos
-  obterCursos(): Observable<Curso[]>{
+  obterCursos():Observable<Curso[]>{
+    
     return this.http.get(this.url+"listar").pipe(
       map((res : any) => {
         this.vetor = res['cursos'];
+        alert('porra');
         return this.vetor;
       })
-    );
+    )
   }
 }

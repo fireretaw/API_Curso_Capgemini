@@ -12,13 +12,13 @@ export class CursoComponent implements OnInit{
 
 
   //Vetor de cursos
-  vetor!:Curso[];
+  vetor:Curso[] = [];
 
   //Objeto da classe curso
   curso = new Curso();
 
   //Construtor 
-  constructor(private curso_service:CursoService){}
+  constructor(private curso_servico:CursoService){}
 
   
 
@@ -35,11 +35,13 @@ export class CursoComponent implements OnInit{
 
   //Seleção
   selecao(){
-    this.curso_service.obterCursos().subscribe(
+    this.curso_servico.obterCursos().subscribe(
       (res: Curso[]) =>{
         this.vetor = res;
+        alert("se fudeu")
       }
-    );
+    )
+    
   }
 
   //Alterar
