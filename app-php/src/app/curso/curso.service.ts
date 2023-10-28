@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class CursoService {
 
   //URL
-  url = "http://localhost/api/php/";
+  url = "http://localhost/api/projeto-api/php/";
 
   //Vetor
   vetor:Curso[] = [];
@@ -24,7 +24,6 @@ export class CursoService {
     return this.http.get(this.url+"listar").pipe(
       map((res : any) => {
         this.vetor = res['cursos'];
-        alert('porra');
         return this.vetor;
       })
     )

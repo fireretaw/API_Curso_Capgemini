@@ -13,7 +13,6 @@ export class CursoComponent implements OnInit{
 
   //Vetor de cursos
   vetor:Curso[] = [];
-
   //Objeto da classe curso
   curso = new Curso();
 
@@ -38,7 +37,6 @@ export class CursoComponent implements OnInit{
     this.curso_servico.obterCursos().subscribe(
       (res: Curso[]) =>{
         this.vetor = res;
-        alert("se fudeu")
       }
     )
     
